@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cardGradient: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    --cardGradient2: linear-gradient(120deg, #9b6838 0%, #ffe9d1 100%);
+    --cartGradient3: linear-gradient(120deg, #000000 0%, #ffffff 100%);
+    --cartGradient4: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+    --buttonGradient: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    --buttonGradient2: linear-gradient(to top, #fc8038 0%, #ca9965 100%);
+    --buttonGradient3: linear-gradient(to top, #4d4d4d 0%, #b3b3b3 100%);
+    --cardFont: 'Mukta', sans-serif;
+    --fontColorMain: #686868;
+    --fontColorSec: #0c0b0b;
+    --fontColorWhite: #ffffff;
+    --fontColor1: #ffffff;
+    --fontColorDarkGrey: #3b3b3b;
+}
+
+body {    
+    font-family: var(--cardFont);
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+p {
+    margin-left: 10px;
+    color: var(--fontColorMain);
+    font-weight: bold;
+    line-height: 20px;
+}
+
+span {
+    margin-right: 7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.chewie-img {
+    height: 105px;
+    width: auto;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 440px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+.card-container {
+    margin: 25px;
+    width: 220px;
+    height: 275px;
+    border: 1px solid var(--fontColorSec);
+    background: var(--cardGradient);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.card-img {
+    width: 90px;
+    margin-left: 62px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+
+.card-data {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--fontColorSec);
+    font-weight: 100;
+}
+
+
+/* ======================================= */
+/*               CARDS                     */
+/* ======================================= */
+
+
+/* Master Yoda */
+
+.card-button-yoda {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    border-radius: 10px;
+    color: var(--fontColorMain);
+    background: var(--fontColorWhite);
+}
+
+.card-button-yoda:hover {
+    color: var(--fontColor1);
+    background: var(--buttonGradient);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+/* Chewbacca */
+
+.chewie {
+    background: var(--cardGradient2);
+}
+
+.card-button-chewie {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    border-radius: 10px;
+    color: var(--fontColorMain);
+    background: var(--fontColorWhite);
+}
+
+.card-button-chewie:hover {
+    color: var(--fontColor1);
+    background: var(--buttonGradient2);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+/* Darth Vader */
+
+.card-button-darth {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    border-radius: 10px;
+    color: var(--fontColorMain);
+    background: var(--fontColorWhite);
+}
+
+.card-button-darth:hover {
+    color: var(--fontColor1);
+    background: var(--buttonGradient3);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.darth {
+    background: var(--cartGradient3);
+}
+
+.darth-text {
+    color: var(--fontColorWhite);
+}
+
+.darth-data {
+    color: var(--fontColorDarkGrey);
+}
+
+/* Luke Skywalker */
+
+.card-button-luke {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    border-radius: 10px;
+    color: var(--fontColorMain);
+    background: var(--fontColorWhite);
+}
+
+.card-button-luke:hover {
+    color: var(--fontColor1);
+    background: var(--buttonGradient3);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.luke {
+    background: var(--cartGradient4);
+}
+
+.luke-text {
+    color: var(--fontColorSec);
+}
+
+.luke-data {
+    color: var(--fontColorDarkGrey);
+}
